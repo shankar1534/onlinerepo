@@ -9,14 +9,14 @@ const Counter = () => {
   const dispatch = useDispatch();
 
   return (
-    <div>
-      <div>
+    <div style={{margin:'auto',width:'200px',border:'2px solid green',display:'flex',alignItems:'center',justifyContent:'center',flexDirection:'column'}}>
+      <div style={{fontSize:'40px'}}>
         <button onClick={() => dispatch(increment())}>
-          Increment
+         Increment
         </button>
       </div>
       <div>
-        <span>{count}</span>
+        <span style={{fontSize:'40px'}}>{count}</span>
       </div>
     </div>
   );
